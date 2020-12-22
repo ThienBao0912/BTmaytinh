@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="mt.css">
+</head>
+<body>
+	<div id="container">
+		<input id="KQ" placeholder="kết quả"/><br/>
+		<div class="calculator">
+			<div class="row">
+				<input class="btn column" id="calc-clear" type="button" value="AC" onclick='delAll()'/>
+				<input class="btn column" id="calc-backspace" type="button" value="DEL" onclick='Del()'/>
+				<input class="btn column" type="button" value="/" onclick='set_num(this.value)'/>
+			</div>
+			<div class="row">
+				<input class="btn column" type="button" value="7" onclick='set_num(this.value)'/>
+				<input class="btn column" type="button" value="8" onclick='set_num(this.value)'/>
+				<input class="btn column" type="button" value="9" onclick='set_num(this.value)'/>
+				<input class="btn column" type="button" value="*" onclick='set_num(this.value)'/>
+			</div>
+			<div class="row">
+				<input class="btn column" type="button" value="4" onclick='set_num(this.value)'/>
+				<input class="btn column" type="button" value="5" onclick='set_num(this.value)'/>
+				<input class="btn column" type="button" value="6" onclick='set_num(this.value)'/>
+				<input class="btn column" type="button" value="-" onclick='set_num(this.value)'/>
+			</div>
+			<div class="row">
+				<input class="btn column" type="button" value="1" onclick='set_num(this.value)'/>
+				<input class="btn column" type="button" value="2" onclick='set_num(this.value)'/>
+				<input class="btn column" type="button" value="3" onclick='set_num(this.value)'/>
+				<input class="btn column" type="button" value="+" onclick='set_num(this.value)'/>
+			</div>
+			<div class="row">
+				<input class="btn column" id="calc-zero" type="button" value="0" onclick='set_num(this.value)'/>
+				<input class="btn column" type="button" value="." onclick='set_num(this.value)'/>
+				<input class="btn column" type="button" value="=" onclick='Ketqua()'/>
+			</div>
+		</div>
+	</div>
+	<script src="mt.js"></script>
+</body>
+</html>
